@@ -22,12 +22,12 @@
 // device port série à utiliser 
 //const char *portTTY = "/dev/ttyGS0"; 
 //const char *portTTY = "/dev/ttyS0";
-//const char *portTTY = "/dev/ttyS1";
+const char *portTTY = "/dev/ttyS1";
 //const char *portTTY = "/dev/ttyS2";
 //const char *portTTY = "/dev/ttyS3";
 //const char *portTTY = "/dev/ttyS4";
 //const char *portTTY = "/dev/ttyS5";
-const char *portTTY = "/dev/ttyUSB0"; // ttyUSB0 is the FT232 based USB2SERIAL Converter
+//const char *portTTY = "/dev/ttyUSB0"; // ttyUSB0 is the FT232 based USB2SERIAL Converter
 
 void main(void)
 	{
