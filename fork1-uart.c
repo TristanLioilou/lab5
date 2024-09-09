@@ -39,7 +39,7 @@ int init_serial(const char *port) {
     SerialPortSettings.c_lflag &= ~(ECHO | ECHOE | ISIG); 
 
     // VMIN = 1 caractère, VTIME = 0 (délai infini)
-    SerialPortSettings.c_cc[VMIN] = 1;
+    SerialPortSettings.c_cc[VMIN] = 2;
     SerialPortSettings.c_cc[VTIME] = 0;
 
     if (tcsetattr(fd, TCSANOW, &SerialPortSettings) != 0) {
